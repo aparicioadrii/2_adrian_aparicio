@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Personaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formulario de Personaje</h1>
+
+<form>
+    <fieldset>
+        <legend>Personaje</legend>
+        
+        <label for="superheroe">Superhéroe favorito:</label>
+        <select id="superheroe" name="superheroe">
+            <option value="spiderman">Spider-Man</option>
+            <option value="batman">Batman</option>
+            <option value="superman">Superman</option>
+            <option value="wonderwoman">Wonder Woman</option>
+        </select>
+
+        <label for="color">Color favorito:</label>
+        <input type="text" id="color" name="color" placeholder="Introduce tu color favorito">
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Introduce tu correo" required>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
