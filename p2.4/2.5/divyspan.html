@@ -1,31 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenedores Div y Span</title>
+    <style>
+        body,
+        h1,
+        p,
+        li,
+        ol {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Primer div -->
-    <div style="height: 100px; background-color: rgb(195, 0, 255);">NORMAS DE CONVIVENCIA SMR2</div>
-
-    <!-- Segundo div -->
-    <div style="height: 100px; background-color: rgb(255, 0, 0);">Normas de CONVIVENCIA
-    
+    <div style="background-color: blueviolet; height: 100px;">
+        <h1>Normas de convivencia SMR 2</h1>
     </div>
-
-    <!-- Tercer div que contiene otros tres divs -->
-    <div style="height: 100px; background-color: darkgreen; overflow: hidden;">
-
-        <!-- Divs dentro del tercer div -->
-        <div style="height: 100%; width: 33.33%; float: left; background-color: yellow;">
-            <span style="color: white; font-size: xx-large;">Texto en amarillo</span>
+    <div id="azul" style="background-color: rgb(252, 3, 3); height: 230px;">
+        <p>
+            <li> Normas de convivencia</li>
+        <ol>
+            <li>Levanta la mano antes de hablas</li>
+            <li>Si llegamos tarde nos sentamos sin hablar al resto de los compañeros</li>
+        </ol>
+        </p>
+    </div>
+    <div style="background-color: rgb(9, 95, 74); height: 300px;">
+        <div style="background-color: yellow; float: left;height: 100%; width: 33%;">
+            <p>A. Ocupo el 100% de alto de mi
+                contenedor padre y un 33% de ancho. estilo concreto para texto:<span
+                    style="color: green;font-size: xx-large;">de color verde y tamaño xxl</span> </p>
         </div>
-        <div style="height: 100%; width: 33.33%; float: left; background-color: rgb(0, 255, 0);"></div>
-        <div style="height: 100%; width: 33.33%; float: left; background-color: purple;"></div>
-
+        <div style="background-color: rgb(54, 145, 41); float: left;height: 50%;width: 34%;">B ocupo un tercio de ancho
+            y la mitad de altura</div>
+        <div style="background-color: rgb(102, 66, 187); float: left;height: 100%;width: 33%;">C. Ocupo un 33% de ancho
+            y un 100%de alto de mi contenedor "div" padre</div>
     </div>
+
 
 </body>
+
 </html>
