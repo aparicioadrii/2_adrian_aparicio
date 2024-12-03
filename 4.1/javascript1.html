@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Camaleón</title>
+    <style>
+        #iddeldiv {
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="iddeldiv" 
+         onmouseenter="hola()" 
+         onmouseleave="adios()">Soy el div camaleón</div>
+    <button onclick="cambiarColor()">Colorea el div</button>
+
+    <script>
+        function cambiarColor() {
+            var div = document.getElementById('iddeldiv');
+            var divColor = div.style.backgroundColor;
+
+            if (divColor === "black") {
+                div.style.backgroundColor = "pink";
+            } else if (divColor === "pink") {
+                div.style.backgroundColor = "blue";
+            } else {
+                div.style.backgroundColor = "black";
+            }
+        }
+
+        function hola() {
+            document.getElementById("iddeldiv").innerHTML += " HOLA!";
+        }
+
+        function adios() {
+            document.getElementById("iddeldiv").innerHTML += " ADIOS!";
+        }
+    </script>
+</body>
+</html>
