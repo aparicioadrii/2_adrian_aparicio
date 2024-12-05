@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div Camaleón</title>
+    <title>Eventos y manipulación del DOM</title>
     <style>
         #iddeldiv {
             width: 500px;
@@ -15,10 +14,9 @@
         }
     </style>
 </head>
+
 <body>
-    <div id="iddeldiv" 
-         onmouseenter="hola()" 
-         onmouseleave="adios()">Soy el div camaleón</div>
+    <div id="iddeldiv" onmouseenter="hola()" onmouseleave="adios()">Soy el div camaleón</div>
     <button onclick="cambiarColor()">Colorea el div</button>
 
     <script>
@@ -36,12 +34,13 @@
         }
 
         function hola() {
-            document.getElementById("iddeldiv").innerHTML += " HOLA!";
+            document.getElementById("iddeldiv").innerHTML += " HOLA";
         }
 
         function adios() {
-            document.getElementById("iddeldiv").innerHTML += " ADIOS!";
+            document.getElementById("iddeldiv").innerHTML += " ADIOS";
         }
     </script>
 </body>
+
 </html>
